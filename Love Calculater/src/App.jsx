@@ -37,7 +37,8 @@ function App() {
         </div>
         <a href="#" onClick={love} className="block text-center">Calculate</a>
         <p id='print' className="block text-center">Your relationship result here:</p>
-        <p id='statement' className="block text-center"></p>
+       <p id='statement' className="block text-center"></p>
+       <h6 className='footer'>Copyright © 2024 Joaquim Timoteo. All rights reserved.</h6>
       </div>
     </div>
   );

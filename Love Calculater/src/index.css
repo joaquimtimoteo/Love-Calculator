@@ -92,6 +92,9 @@ a{
     z-index: -1;
 }
 
+.footer{
+    color:#fff;
+}
 
 
   /* Media query para ajustar o layout em telas menores */
