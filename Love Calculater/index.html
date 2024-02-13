@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love Calculate</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx">
+      var name1= document.getElementById('NameOne').value;
+      var name2= document.getElementById('NameTwo').value;
+      if(name1 =="" || name2==""){
+        alert("Fill the gap");
+      } else if( name1.length <=2 || name2.length <=2 ){
+        alert("The names need to be more then 3 Character")
+      }
+    </script>
+  </body>
+</html>

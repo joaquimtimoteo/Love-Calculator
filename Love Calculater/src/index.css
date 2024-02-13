@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Manrope:wght@400;500;600;700;800&family=PT+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+body{
+    background:pink;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height:80vh;
+    width: 60vw; /* Define a largura do container em 90% da largura da tela */
+    max-width: 500px; /* Define a largura máxima do container */
+    padding: 20px; 
+    box-shadow:  inset -8px -8px 12px rgb(185,103,117),
+                 inset -8px -8px 12px rgb(201,95,114);
+                 border-radius:50px; 
+  }
+.content{
+    text-transform:uppercase;
+    text-align:center;
+    color: #d7385c;
+    padding: 39px; 
+}
+
+.inputarea{
+    display:flex;
+}
+
+.inputarea input {
+    width: 100%; /* Defina a largura dos inputs como 100% para que ocupem todo o espaço disponível */
+    height: 30px;
+    text-align: center;
+    margin: 5px;
+    outline: none;
+    border: 2px solid #d7385c;
+    padding: 20px 40px;
+    font-size: 20px;
+}
+
+a{
+    display:flex;
+    justity-content:center;
+    text-decoration:none;
+    background-color:#d7385c;
+    padding:10px;
+    margin:0px 6px;
+    color: #fff;
+    text-transform:uppercase;
+    font-size:20px;
+    font-weight:bold;
+    text:center;
+}
+
+#print{
+    display:flex;
+    margin:20px;
+    justity-content:center;
+    text-align:center;
+}
+#statement{
+    display:flex;
+    display-content:center;
+    margin-top:50%;
+    text-transform:uppercase;
+    font-size:20px;
+    color:#fff;
+}
+
+.container {
+    position: absolute; /* Corrigido erro de digitação */
+}
+
+.background-image {
+    top: 0;
+    left: 0;
+    background-image: url('images/casamento.jpg');
+    background-size: cover;
+    background-position: center; /* Adicionado para centralizar a imagem */
+    background-color: rgba(255, 192, 203, 0.5); /* Rosa com opacidade de 50% */
+    z-index: -1;
+}
+
+
+
+  /* Media query para ajustar o layout em telas menores */
+  @media (max-width: 760px) {
+    .container {
+      width: 100%; 
+    }
+  }
+  
